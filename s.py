@@ -13,13 +13,13 @@ class Order:
         return total_cost
 
     def validate_order(self):
-        print('Validating order')
+        print("Validating order")
       
     def send_confirmation(self):
-        print('Confirmation for Order')
+        print("Confirmation for Order")
       
     def update_inventory(self):
-        print('Updating store inventory')
+        print("Updating store inventory")
 
 class Item:
     def __init__(self, name, price, quantity):
@@ -29,15 +29,15 @@ class Item:
 
 class OrderValidator:
     def order_validation(self, order):
-        print('Validate Order')
+        print("Validate Order")
 
 class EmailSender:
     def order_confirmation(self, order):
-        print('Send Order Confirmation')
+        print("Send Order Confirmation")
 
 class InventoryManager:
     def update_inventory(self, order):
-        print('Update Store inventory
+        print("Update Store inventory")
 
     
 
