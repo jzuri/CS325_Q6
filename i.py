@@ -14,7 +14,6 @@ class Searchable:
     def search_genre(self, genre):
         print("searching for book by genre catagory")
 
-# Interface for managing borrowings
 class Borrowable:
     @abstractmethod
     def borrow_book(self, user_id, book_id):
@@ -24,7 +23,6 @@ class Borrowable:
     def return_book(self, user_id, book_id):
         print("This book has been returned")
 
-# Interface for generating reports
 class Reportable:
     @abstractmethod
     def borrowing_report(self):
@@ -38,42 +36,33 @@ class Reportable:
     def popularity_report(self):
         print("These books are popular")
 
-# Class representing the Library
 class Library(Searchable, Borrowable, Reportable):
     def __init__(self, catalog):
         self.catalog = catalog
 
     def search_title(self, title):
-        # Implementation of search by title
-        pass
+        print("searching for book title")
 
     def search_author(self, author):
-        # Implementation of search by author
-        pass
+        print("searching for book by author")
 
     def search_genre(self, genre):
-        # Implementation of search by genre
-        pass
+        print("searching for book by genre catagory")
 
     def borrow_book(self, user_id, book_id):
-        # Implementation of borrowing book
-        pass
+        print("This book is out for use")
 
     def return_book(self, user_id, book_id):
-        # Implementation of returning book
-        pass
+        print("This book has been returned")
 
     def borrowing_report(self):
-        # Implementation of borrowing report generation
-        pass
+        print("These books are currently out for renting")
 
     def overdue_report(self):
-        # Implementation of overdue report generation
-        pass
+        print("These books are overdue")
 
     def popularity_report(self):
-        # Implementation of popularity report generation
-        pass
+       print("These books are popular")
 
 # Class representing Guest User
 class Guest(Searchable):
