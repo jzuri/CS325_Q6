@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 class Searchable:
     @abstractmethod
     def search_title(self, title):
-        print("searching for book title"
+        print("searching for book title")
 
     @abstractmethod
     def search_author(self, author):
