@@ -45,6 +45,6 @@ def main():
     print("Rectangle's Area: ", rectangle.area())
     print("Triangle's Area: ", triangle.area())
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     main()
     
