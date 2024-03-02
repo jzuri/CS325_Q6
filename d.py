@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 class Logger(ABC):
     @abstractmethod
     def debug(self, message):
-        print('Debugging data")
+        print("Debugging data")
 
     @abstractmethod
     def info(self, message):
